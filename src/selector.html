@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./selector.css">
+    <title>Selector</title>
+    <style>  .hidden {
+        display: none;
+    }</style>
+</head>
+<body>
+    <div class="main">
+        <h1>Select the Home Appliances</h1>
+        <div  class="dropdownGroup">
+            <label class="dropDownLabel">Select Refrigerator</label>
+            <select id = "refrigeratorDropdown" class="dropdown" onchange="toggleModelDropdown()">
+                <option value="">Select an Option</option>
+                <option value="whirlpool" >Whirlpool</option>
+                <option value="samsung">Samsung</option>
+                <option value="haier">Haier</option>
+                <option value="lg">LG</option>
+                <option value="bosch">Bosch</option>
+            </select>
+        </div>
+
+        <div id="modelDropdownContainer" class="dropdownGroup">
+            <label class="dropDownLabel" >Select Refridgerator Model</label>
+            <select class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a">184L</option>
+                <option value="b">NeoFresh 235L</option>
+                <option value="c">WDE 184L</option>
+                <option value="d">Vitamagic Pro 192L</option>
+                <option value="e">IceMagic Pro 207L</option>
+            </select>
+        </div>
+
+        <div class="dropdownGroup">
+            <label class="dropDownLabel" >Select Air Conditioner</label>
+            <select id = "airconditionerDropdown" class="dropdown" onchange="toggleModelDropdown2()" class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a" >Blue Star</option>
+                <option value="a">Samsung</option>
+                <option value="a">Haier</option>
+                <option value="a">O General</option>
+                <option value="a">Voltas</option>
+            </select>
+        </div>
+
+        <div id="modelDropdownContainer2" class="dropdownGroup">
+            <label class="dropDownLabel" >Select Air Conditioner Model</label>
+            <select class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a">IC518DATU</option>
+                <option value="b">BS-5CNHW18DA</option>
+                <option value="c">3HW18JD1</option>
+                <option value="d">5W18LD</option>
+                <option value="e">3CNHW18CAF</option>
+            </select>
+        </div>
+
+        <div class="dropdownGroup">
+            <label class="dropDownLabel">Select Washing Machine</label>
+            <select class="dropdown" id="washingmachineDropdown" onchange="toggleModelDropdown3()">
+                <option value="">Select an Option</option>
+                <option value="a">Whirlpool</option>
+                <option value="a">Samsung</option>
+                <option value="a">Maytag</option>
+                <option value="a">LG</option>
+                <option value="a">Bosch</option>
+            </select>
+        </div>
+
+        <div id="modelDropdownContainer3" class="dropdownGroup">
+            <label class="dropDownLabel" >Select Washing Machine Model</label>
+            <select class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a">Serie 6 WAK24268IN</option>
+                <option value="b">Serie 4 WAB16262IN</option>
+                <option value="c">Serie 8 WAW28560IN</option>
+                <option value="d">WOE654W0IN</option>
+                <option value="e">WOE752D0IN</option>
+            </select>
+        </div>
+        
+        <div class="dropdownGroup">
+            <label class="dropDownLabel">Select Fan</label>
+            <select class="dropdown" id="fanDropdown" onchange="toggleModelDropdown4()">
+                <option value="">Select an Option</option>
+                <option value="a">Luminous</option>
+                <option value="a">Bajaj</option>
+                <option value="a">Usha</option>
+                <option value="a">Activa</option>
+                <option value="a">Milton</option>
+            </select>
+        </div>
+
+        <div id="modelDropdownContainer4" class="dropdownGroup">
+            <label class="dropDownLabel" >Select Fan Model</label>
+            <select class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a">Deco 1200 mm</option>
+                <option value="b">Zephyr 1200 mm</option>
+                <option value="c">Viento 1200 mm</option>
+                <option value="d">Windmill 1200 mm</option>
+                <option value="e">Celestra 1200 mm</option>
+            </select>
+        </div>
+
+        <div class="dropdownGroup">
+            <label class="dropDownLabel" >Select Light</label>
+            <select class="dropdown" id="lightDropdown" onchange="toggleModelDropdown5()">
+                <option value="">Select an Option</option>
+                <option value="a">Luminous</option>
+                <option value="a">Phillips</option>
+                <option value="a">Crompton</option>
+                <option value="a">Havells</option>
+                <option value="a">Wipro</option>
+            </select>
+        </div>
+
+        <div id="modelDropdownContainer5" class="dropdownGroup">
+            <label class="dropDownLabel" >Select light Model</label>
+            <select class="dropdown">
+                <option value="">Select an Option</option>
+                <option value="a">Aura LED Downlight</option>
+                <option value="b">Optimus LED Street Light</option>
+                <option value="c">High Bay LED Light</option>
+                <option value="d">Greys LED Panel Light</option>
+                <option value="e">Gardenia LED Garden Light</option>
+            </select>
+        </div>
+
+        <button class="primaryCTA" onclick="redirectToDashboard()">Next</button>
+    </div>
+       <script>
+
+         function toggleModelDropdown() {
+            const refrigeratorDropdown = document.getElementById('refrigeratorDropdown');
+            const modelDropdownContainer = document.getElementById('modelDropdownContainer');
+            if (refrigeratorDropdown.value != "") {
+                modelDropdownContainer.classList.remove('hidden');
+            } else {
+                modelDropdownContainer.classList.add('hidden');
+            }
+        }
+
+        function toggleModelDropdown2() {
+            const Dropdown = document.getElementById('airconditionerDropdown');
+            const modelDropdownContainer = document.getElementById('modelDropdownContainer2');
+            if (Dropdown.value != "") {
+                modelDropdownContainer.classList.remove('hidden');
+            } else {
+                modelDropdownContainer.classList.add('hidden');
+            }
+        }
+
+        function toggleModelDropdown3() {
+            const Dropdown = document.getElementById('washingmachineDropdown');
+            const modelDropdownContainer = document.getElementById('modelDropdownContainer3');
+            if (Dropdown.value != "") {
+                modelDropdownContainer.classList.remove('hidden');
+            } else {
+                modelDropdownContainer.classList.add('hidden');
+            }
+        }
+
+        function toggleModelDropdown4() {
+            const Dropdown = document.getElementById('fanDropdown');
+            const modelDropdownContainer = document.getElementById('modelDropdownContainer4');
+            if (Dropdown.value != "") {
+                modelDropdownContainer.classList.remove('hidden');
+            } else {
+                modelDropdownContainer.classList.add('hidden');
+            }
+        }
+
+        function toggleModelDropdown5() {
+            const Dropdown = document.getElementById('lightDropdown');
+            const modelDropdownContainer = document.getElementById('modelDropdownContainer5');
+            if (Dropdown.value != "") {
+                modelDropdownContainer.classList.remove('hidden');
+            } else {
+                modelDropdownContainer.classList.add('hidden');
+            }
+        }
+              function redirectToDashboard() {
+            window.location.href = "./dashboard.html"
+        }
+
+       </script> 
+
+</body>
+</html>

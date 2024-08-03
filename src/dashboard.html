@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dashboard.css">
+    <title>Sustainable</title>
+</head>
+<body>
+    <div class="background">
+        <h1 class="app-name">Sustainable Mobility Tracker</h1>
+        <div class="select">
+            <div class="field">
+                <button onclick="loadContent('transport.html')">Transport</button>
+            </div>
+            <div class="field">
+                <button onclick="loadContent('electricity.html')">Electricity</button>
+            </div>
+            <div class="field">
+                <button onclick="loadContent('water.html')">Water</button>
+            </div>
+            <div class="field">
+                <button onclick="loadContent('greensource.html')">Green Score</button>
+            </div>
+        </div>
+        <div id="content" class="content"></div>
+    </div>
+
+    <script>
+        function loadContent(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading content:', error);
+                });
+        }
+    </script>
+</body>
+</html>

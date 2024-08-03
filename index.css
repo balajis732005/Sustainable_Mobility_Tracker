@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-bottom: 2px solid #fff;
+}
+
+.heading {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.page-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.page-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.head {
+    padding: 20px;
+    margin: 20px 0;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    display: inline-block; 
+}
+
+.head .welcome {
+    margin: 0;
+    font-size: 32px;
+}
+
+.head .name {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.head .email {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.head .verify {
+    margin: 20px 0 0;
+    font-size: 20px;
+    color: #ffcc00;
+    cursor: pointer;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    display: inline-block; 
+    text-align: left;
+    width: 80%; 
+}
+
+.cre-card {
+    margin: 0 0 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.para {
+    margin: 0;
+    font-size: 18px;
+}
+
+#sustainableContainer {
+    display: none; 
+    margin-top: 10px; 
+    text-align: right; 
+    padding-right: 10px; 
+}
+
+#sustainableButton {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0; 
+}
+
+#sustainableButton:hover {
+    background-color: #0056b3;
+}
+
+/* New Styles */
+.account-info {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+}
+
+.balance {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.recent-transactions {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+}
+
+.recent-transactions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recent-transactions li {
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.contact-support {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+}
+
+.contact-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,50 @@
+.background {
+    background-image: url('../assets/background_log_reg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: start; 
+    align-items: center; 
+    overflow: auto; 
+}
+
+
+.select {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.field {
+    margin: 0;
+}
+
+.field button {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    color: #2E7D32;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.field button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.field button:nth-child(4) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.app-name{
+    margin-bottom: 50px;
+    color: #4CAF50;
+}

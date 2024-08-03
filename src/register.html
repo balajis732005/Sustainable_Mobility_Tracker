@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h1 class="app-name">Sustainability Mobility Tracker</h1>
+    <form class="formGroup">
+<h1 class="title">Register an Account</h1>
+      <div class="entry">
+        <label class="entryLabel">Aadhaar Number</label>
+        <input
+          class="inputElement"
+          placeholder="0000 0000 0000 0000"
+        />
+      </div>
+      <div class="entry">
+        <label class="entryLabel">Username</label>
+        <input class="inputElement" placeholder="Create your new User Name " />
+      </div>
+      <div class="entry">
+        <label class="entryLabel">Password</label>
+        <input class="inputElement" placeholder="Create your new Password" />
+      </div>
+      <button class="primaryCTA">Register</button>
+      <p class="redirectTest">Already have an Account ? 
+        <span class="redirectLink" onclick="reDirectToLogin()">Login here</span>
+      </p>
+    </form>
+    <script>
+      function reDirectToLogin() {
+        window.location.href = "./login.html"
+      }
+    </script>
+  </body>
+</html>

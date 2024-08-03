@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./login.css">
+    <title>Sustainable</title>
+</head>
+<body>
+    <h1 class="app-name">Sustainable Mobility Tracker</h1>
+    <div class="background">
+        <h1 class="heading">Log In</h1>
+        <div class="form">
+            <label class="userName">UserName</label>
+            <input type="text"
+                   class="input-username"
+                   placeholder="Enter your username"
+            >
+            <label class="label-Password">Password</label>
+            <input type="password"
+                   class="input-password"
+                   placeholder="Enter your password"
+            >
+            <button class="login-button" onclick="redirectToSelector()">Log In</button>
+        </div>
+        <p class="noaccount">Don't have Acoount ? 
+            <span class="register-link" onclick="redirectToRegister()">Click here</span>
+        </p>
+    </div>
+
+    <script>
+        function redirectToRegister() {
+            window.location.href = "./register.html";
+        }
+        function redirectToSelector() {
+            window.location.href = "./selector.html";
+        }
+    </script>
+</body>
+</html>
