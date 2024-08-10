@@ -8,8 +8,9 @@
     justify-content: start; 
     align-items: center; 
     overflow: auto; 
+    background-size: cover;
+    background-position: center;
 }
-
 
 .select {
     display: flex;
